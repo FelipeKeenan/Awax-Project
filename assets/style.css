@@ -30,6 +30,7 @@ header {
     height: 80px;
     width: 80px;
     background-color: #b28756;
+    border-radius: 50%;
 }
 
 .menu {
@@ -84,4 +85,53 @@ header {
     display: inline-block;
     color: white ;
     background-color: rgba(0, 0, 0, 0.7);
+}
+.slide-area{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black;
+}
+.banner h2{
+    text-transform: uppercase;
+}
+.banner span{
+    color: #b28756;
+}
+.banner button{
+    padding: 10px 30px;
+    background-color: #b28756;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+.banner .sliders-pointer{
+    height: 20px;
+    width: 100vw;
+    position: absolute;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+.banner .pointer{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.banner .pointer.active{
+    background-color: #b28756;
 }
