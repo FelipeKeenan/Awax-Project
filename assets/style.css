@@ -7,6 +7,7 @@
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden;
 }
 
 header {
@@ -83,10 +84,11 @@ header {
     height: 100%;
     width: 100vw;
     display: inline-block;
-    color: white ;
+    color: white;
     background-color: rgba(0, 0, 0, 0.7);
 }
-.slide-area{
+
+.slide-area {
     height: 100%;
     display: flex;
     align-items: center;
@@ -94,19 +96,23 @@ header {
     flex-direction: column;
     row-gap: 20px;
 }
-.banner h1{
+
+.banner h1 {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 40px;
     text-shadow: 2px 2px 4px black;
 }
-.banner h2{
+
+.banner h2 {
     text-transform: uppercase;
 }
-.banner span{
+
+.banner span {
     color: #b28756;
 }
-.banner button{
+
+.banner button {
     padding: 10px 30px;
     background-color: #b28756;
     border-radius: 30px;
@@ -115,7 +121,8 @@ header {
     cursor: pointer;
     font-weight: 600;
 }
-.banner .sliders-pointer{
+
+.banner .sliders-pointer {
     height: 20px;
     width: 100vw;
     position: absolute;
@@ -125,13 +132,235 @@ header {
     justify-content: center;
     column-gap: 5px;
 }
-.banner .pointer{
+
+.banner .pointer {
     width: 20px;
     height: 20px;
     border: 2px solid #b28756;
     border-radius: 50%;
     cursor: pointer;
 }
-.banner .pointer.active{
+
+.banner .pointer.active {
     background-color: #b28756;
+}
+
+
+.default {
+    padding: 50px 0px;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-body {
+    margin: auto;
+    max-width: 1140px;
+}
+
+.default .section-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.default .section-desc {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 13px;
+    margin-bottom: 40px;
+}
+
+.default.light {
+    background-color: #f7f7f7;
+}
+
+.default.light .section-title,
+.default.light .section-body {
+    color: #000;
+}
+
+.dark {
+    background-color: #000;
+
+}
+
+.default.dark .section-title,
+.default.dark .section-body {
+    color: #fff;
+}
+
+.about-us {
+    display: flex;
+}
+
+.left-side {
+    flex: 1;
+}
+
+.left-side p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.left-side button {
+    padding: 10px 30px;
+    background-color: #b28756;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.right-side {
+    width: 500px;
+}
+
+.right-side img {
+    width: 100%;
+    box-shadow: 0px 5px 10px #333;
+}
+
+.section-services {
+    display: flex;
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+
+.section-service h4 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.section-service p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999
+}
+
+.section-service:first-child {
+    border-left: 1px solid #333;
+}
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects .filters {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.section-projects ul,
+.section-projects li {
+    list-style: none;
+}
+
+.section-projects li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #ccc;
+    color: #555;
+    border-bottom: 3px solid #eee;
+    cursor: pointer;
+}
+
+.section-projects li:hover,
+.section-projects li.active {
+    border-bottom: 3px solid #b28756;
+}
+
+.section-projects li:first-child {
+    border-left: 0px;
+}
+
+.section-photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-photos .photo {
+    width: 280px;
+
+}
+
+.section-photos .photo .photo-area {
+    width: 260px;
+    margin: 10px;
+    height: 160px;
+}
+
+.section-photos .photo .photo-area img {
+    width: inherit;
+    height: inherit;
+}
+
+.photoinfo {
+    position: absolute;
+    color: white;
+    display: none;
+    flex-direction: column;
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.photoinfo h5 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-photos .photo .photo-area:hover .photoinfo {
+    display: flex;
+}
+
+.section-projects button {
+    padding: 10px 30px;
+    background-color: #b28756;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.default.dark.bg-team {
+    background: url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.team-area {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
