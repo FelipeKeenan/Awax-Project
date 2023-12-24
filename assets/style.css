@@ -364,3 +364,80 @@ header {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.section-team {
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.section-team .sliders {
+    height: 100%;
+    width: 1000vw;
+}
+
+.section-team .slider {
+    height: 100%;
+    width: 280px;
+    display: inline-block;
+    color: white;
+    background-color: #fff;
+    margin-right: 20px;
+    min-height: 300px;
+}
+
+.section-team .slide-area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 30px;
+    color: #000
+}
+
+.sliders-pointer {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    margin-top: 30px;
+}
+
+.pointer {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pointer.active {
+    background-color: #b28756;
+}
+
+.slide-area .social a {
+    height: 25px;
+    width: 25px;
+    background-color: #999;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.slide-area .social a:hover {
+    background-color: #b28756;
+}
+.slide-area h5{
+    font-size: 23px;
+    font-weight: bold;
+}
+.slide-area p{
+    font-size: 13px;
+    font-weight: 600;
+    color: #ccc;
+}
