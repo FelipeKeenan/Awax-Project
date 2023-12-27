@@ -41,6 +41,10 @@ header {
     justify-content: flex-end;
 }
 
+.menu-opener {
+    display: none;
+}
+
 .menu ul,
 .menu li,
 .menu ul li a {
@@ -827,9 +831,10 @@ header {
 }
 
 .footer-boxes #description {
-    text-align: justify;
-    line-height: 18px;
-    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    margin: auto;
 }
 
 .image-area.active {
@@ -877,4 +882,117 @@ header {
     font-weight: 600;
     margin-top: 25px;
     text-transform: uppercase;
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+    nav {
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        right: 0px;
+        top: 100px;
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin-bottom: -50px;
+    }
+
+    .menu li a {
+        font-weight: bold;
+        font-size: 27px;
+        height: 80px;
+        margin-right: 60px;
+        border: 0;
+    }
+
+    .menu li.active a {
+        border: 0;
+        color: #b28756;
+    }
+
+    .menu-opener {
+        margin-right: 30px;
+        width: 45px;
+        display: block;
+    }
+
+    header .logo {
+        margin-left: 30px;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .left-side {
+        padding: 0px 30px 30px 30px;
+        text-align: center;
+    }
+
+    .right-side {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+
+    .section-services {
+        flex-wrap: wrap;
+    }
+
+    .section-service {
+        min-width: 50%;
+    }
+
+    .section-service:first-child {
+        border: 0;
+    }
+
+    .section-team {
+        max-width: 580px;
+    }
+
+    .sponsors {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 5px;
+    }
+
+    .sponsors img {
+        margin-right: 0px;
+    }
+
+    .price-table {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .box-premium {
+        padding: 0px 15px;
+    }
+
+    .map-info {
+        width: auto;
+        margin: 0px 15px;
+    }
+
+    .description {
+        font-size: 12px;
+        line-height: 0px;
+    }
+
+    .footer-boxes {
+        height: auto;
+        padding: 0;
+    }
+
+    .footer-area {
+        column-gap: 15px;
+    }
 }
