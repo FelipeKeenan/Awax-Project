@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
     <script src="assets/js/script.js" defer></script>
     <header>
@@ -39,33 +40,33 @@
         <section class="banner">
             <div class="sliders">
                 <div class="slider">
-                    <div class="slide-area">
+                    <div class="slide-area-communication">
                         <h1>Design is about <br><span>communication</span></h1>
                         <h2>Call us: 0 00 1234 5678</h2>
                         <button>GET IN TOUCH</button>
                     </div>
                 </div>
                 <div class="slider">
-                    <div class="slide-area">
+                    <div class="slide-area-love">
                         <h1>Design is about <br><span>love</span></h1>
                         <h2>Call us: 0 00 1234 5678</h2>
                         <button>GET IN TOUCH</button>
                     </div>
                 </div>
                 <div class="slider">
-                    <div class="slide-area">
+                    <div class="slide-area-future">
                         <h1>Design is about <br><span>future</span></h1>
                         <h2>Call us: 0 00 1234 5678</h2>
                         <button>GET IN TOUCH</button>
                     </div>
                 </div>
-                <div class="sliders-pointer">
-                    <div class="pointer active"></div>
-                    <div class="pointer"></div>
-                    <div class="pointer"></div>
-                </div>
             </div>
-        </section>
+            <div class="sliders-pointer">
+                <div class="pointer active" onclick="changeSlide(1)"></div>
+                <div class="pointer" onclick="changeSlide(2)"></div>
+                <div class="pointer" onclick="changeSlide(3)"></div>
+            </div>
+        </section>        
         <section class="default light">
             <div class="section-title">About Us</div>
             <div class="section-desc">Who are we?</div>
@@ -295,11 +296,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="sliders-pointer">
-                        <div class="pointer active"></div>
-                        <div class="pointer"></div>
-                        <div class="pointer"></div>
-                    </div>
             </section>
         </section>
         <section class="default light">
@@ -316,11 +312,6 @@
                         vero delectus magni laborum dolorum illum consequatur consectetur, ex voluptatem natus quibusdam
                         veritatis illo autem soluta. Minus, provident voluptas. Animi deserunt qui, et tenetur commodi
                         illo. Vero, vitae!</p>
-                    <div class="sliders-pointer">
-                        <div class="pointer active"></div>
-                        <div class="pointer"></div>
-                        <div class="pointer"></div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -427,11 +418,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="sliders-pointer">
-                    <div class="pointer active"></div>
-                    <div class="pointer"></div>
-                    <div class="pointer"></div>
                 </div>
                 <button>Get in Touch</button>
             </div>
@@ -589,7 +575,8 @@
                 <div class="footer-boxes email-box">
                     <div class="box-email">
                         <h6>Email to subscribe</h6>
-                        <div class="line"></div>
+                        <p>Fique atento às nossas novidades com a nossa Newsletter!</p>
+                        <input type="email" name="email" placeholder="Insira seu email" id="email" required>
                         <button>Subscribe</button>
                     </div>
 

@@ -1,4 +1,27 @@
-* {
+
+.banner .sliders-pointer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    margin: 0;
+    position: absolute;
+    margin-top: -100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner .pointer {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #040404;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: white;
+}* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -74,15 +97,15 @@ header {
 .banner {
     background-color: #ccc;
     height: calc(100vh - 100px);
-    background-image: url('images/bg.jpg');
-    background-size: cover;
-    background-position: bottom;
     overflow: hidden;
+
 }
 
 .banner .sliders {
     height: 100%;
-    width: 1000vw;
+    width: 300vw;
+    display: flex;
+    transition: 2s;
 }
 
 .banner .slider {
@@ -93,15 +116,44 @@ header {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.slide-area {
+.slide-area-communication {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     row-gap: 20px;
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
 }
 
+.slide-area-love{
+    background-image: url('../media/bannerTwo.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+}
+
+.slide-area-future{
+    background-image: url('../media/bannerThree.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+}
 .banner h1 {
     text-transform: uppercase;
     font-weight: bold;
@@ -127,28 +179,6 @@ header {
     font-weight: 600;
 }
 
-.banner .sliders-pointer {
-    height: 20px;
-    width: 100vw;
-    position: absolute;
-    margin-top: -100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 5px;
-}
-
-.banner .pointer {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #b28756;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.banner .pointer.active {
-    background-color: #b28756;
-}
 
 
 .default {
@@ -403,15 +433,6 @@ header {
     color: #000
 }
 
-.sliders-pointer {
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 5px;
-    margin-top: 30px;
-}
-
 .pointer {
     width: 20px;
     height: 20px;
@@ -497,6 +518,7 @@ header {
     align-items: center;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    gap: 20px;
 }
 
 
@@ -595,7 +617,7 @@ header {
     margin-top: 30px;
     display: flex;
     margin: auto;
-    margin-top: 30px;
+    margin-bottom: 14px;
 }
 
 .businnes-facts {
@@ -810,12 +832,14 @@ header {
     max-width: 1140px;
     margin: auto;
     display: flex;
+    padding: 30px 0;
 }
 
 .icons-social-media {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .footer-boxes {
@@ -853,18 +877,34 @@ header {
     row-gap: 15px;
 }
 
+.footer-boxes{
+    border-radius: 10px;
+}
+
+.box-email input{
+    padding: 5px 15px;
+    text-align: left;
+    font-size: medium;
+    color:black;
+    border-radius: 15px;
+    border-style: none;
+}
+
+
 .footer-boxes.email-box {
     background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15px;
+    
 }
 
 .footer-boxes.email-box h6 {
-    font-size: 18px;
+    font-size: 1.4em;
     text-transform: uppercase;
     font-weight: bold;
-    color: #ccc;
+    color: white;;
 
 }
 
@@ -905,13 +945,8 @@ header {
     }
 
 
-
     .banner h1 {
         font-size: 2rem;
-    }
-
-    .banner .sliders {
-        width: 100%;
     }
 
     .menu-opener {
@@ -954,6 +989,20 @@ header {
 
     }
 
+
+    .section-projects ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .section-projects li {
+        display: block;
+        border: none;
+
+    }
 
     .about-us {
         flex-direction: column;

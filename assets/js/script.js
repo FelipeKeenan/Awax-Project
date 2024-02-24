@@ -10,7 +10,6 @@ function abrirMenu() {
     }
 }
 
-// Adicione um evento de redimensionamento para garantir que o menu seja exibido ou ocultado corretamente quando a largura da tela mudar.
 window.addEventListener('resize', function() {
     if (window.innerWidth > 800) {
         nav.style.display = 'block';
@@ -18,3 +17,23 @@ window.addEventListener('resize', function() {
         nav.style.display = 'none';
     }
 });
+
+
+function changeSlide(slideNumber) {
+    // Remove a classe "active" de todos os pointers
+    let pointers = document.querySelectorAll('.pointer');
+    pointers.forEach(pointer => {
+        pointer.classList.remove('active');
+    });
+
+    // Adiciona a classe "active" ao pointer clicado
+    pointers[slideNumber - 1].classList.add('active');
+
+    // Calcula a posição do slide
+    let sliders = document.querySelector('.sliders');
+    let slideWidth = sliders.offsetWidth / 3;
+    let newPosition = -((slideNumber - 1) * slideWidth);
+
+    // Atualiza a posição do slide
+    sliders.style.transform = `translateX(${newPosition}px)`;
+}
