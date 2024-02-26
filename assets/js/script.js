@@ -37,3 +37,22 @@ function changeSlide(slideNumber) {
     // Atualiza a posição do slide
     sliders.style.transform = `translateX(${newPosition}px)`;
 }
+
+
+//Criando função que liga o click no menu ao respectivo conteúdo.
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollToTopBtn").style.display = "block";
+  } else {
+    document.getElementById("scrollToTopBtn").style.display = "none";
+  }
+}
+
+// Quando o usuário clica no botão, role até o topo da página
+function scrollToTop() {
+  document.body.scrollTop = 0; // Para navegadores da web Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+}

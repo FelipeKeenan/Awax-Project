@@ -16,28 +16,30 @@
     <header>
         <div class="header">
             <div class="logo">
-                <div class="logotipo"></div>
+                <div class="logotipo">
+                    <img src="https://www.mintformations.co.uk/blog/wp-content/uploads/2020/05/shutterstock_583717939.jpg" alt="logo">
+                </div>
             </div>
             <div class="menu">
                 <img class="menu-opener" src="assets/images/menu.png" alt="menu-icon">
                 <nav>
                     <ul>
-                        <li class="active"><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Our Projects</a></li>
-                        <li><a href="">Our Team</a></li>
-                        <li><a href="">Happy Clients</a></li>
-                        <li><a href="">Price</a></li>
-                        <li><a href="">Some Facts</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Our Projects</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#clients">Happy Clients</a></li>
+                        <li><a href="#price">Price</a></li>
+                        <li><a href="#facts">Some Facts</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner" id="home">
             <div class="sliders">
                 <div class="slider">
                     <div class="slide-area-communication">
@@ -66,8 +68,8 @@
                 <div class="pointer" onclick="changeSlide(2)"></div>
                 <div class="pointer" onclick="changeSlide(3)"></div>
             </div>
-        </section>        
-        <section class="default light">
+        </section>
+        <section class="default light" id="about">
             <div class="section-title">About Us</div>
             <div class="section-desc">Who are we?</div>
             <div class="section-body">
@@ -87,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="default dark">
+        <section class="default dark" id="services" >
             <div class="section-title">SERVICES</div>
             <div class="section-desc">SERVICES THAT WE PROVIDE</div>
             <div class="section-body">
@@ -115,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section class="default light">
+        <section class="default light" id="projects">
             <div class="section-title">Our Projects</div>
             <div class="section-desc">What we create?</div>
             <div class="section-body">
@@ -245,7 +247,7 @@
             </div>
         </section>
 
-        <section class="default dark bg-team">
+        <section class="default dark bg-team" id="team">
             <section class="team-area">
                 <div class="section-title">Our Team</div>
                 <div class="section-desc">Our co-workers</div>
@@ -298,7 +300,7 @@
                     </div>
             </section>
         </section>
-        <section class="default light">
+        <section class="default light" id="clients">
             <div class="section-title">Happy Clients</div>
             <div class="section-desc">Clients Review</div>
             <div class="section-body">
@@ -323,7 +325,7 @@
             <img src="media/empresa5.png" alt="">
             <img src="media/empresa6.png" alt="">
         </section>
-        <section class="default light">
+        <section class="default light" id="price">
             <div class="section-title">Price</div>
             <div class="section-desc">Pricing Table</div>
             <div class="section-body">
@@ -422,7 +424,7 @@
                 <button>Get in Touch</button>
             </div>
         </section>
-        <section class="default dark">
+        <section class="default dark" id="facts">
             <div class="section-title">Some Facts</div>
             <div class="section-desc">About our Work</div>
             <div class="section-body">
@@ -488,7 +490,7 @@
                 <p>134</p>
             </div>
         </section>
-        <section class="default">
+        <section class="default" id="contact">
             <div class="section-title">Contact Us</div>
             <div class="section-desc">Our Agency Located in Melbourne, Australia</div>
             <div class="section-body">
@@ -584,6 +586,8 @@
             </div>
         </div>
     </footer>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">^</button>
+
 </body>
 
 </html>
